@@ -25,7 +25,7 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body class="body">
+  <body class="body" data-theme="1">
     <header class="header">
       <div class="header__left"><h1 class="heading">calc</h1></div>
       <div class="header__right">
@@ -55,7 +55,9 @@
         <button class="btn" data-action="digit">7</button>
         <button class="btn" data-action="digit">8</button>
         <button class="btn" data-action="digit">9</button>
-        <button class="btn btn-blue" data-action="delete">del</button>
+        <button class="btn btn-blue delete-key" data-action="delete">
+          del
+        </button>
         <button class="btn" data-action="digit">4</button>
         <button class="btn" data-action="digit">5</button>
         <button class="btn" data-action="digit">6</button>
@@ -74,13 +76,19 @@
         <button class="btn btn-red equal-key" data-action="equals">=</button>
       </div>
     </main>
-    <!-- <footer class="footer">
-        <div class="attribution">
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+    <footer class="footer">
+      <div class="attribution">
+        Challenge by
+        <a
+          class="attribution__link"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
           >Frontend Mentor</a
-          >. Coded by <a href="https://github.com/bhoamikhona">Bhoami K Khona</a>.
-        </div>
-      </footer> -->
+        >. Coded by
+        <a class="attribution__link" href="https://github.com/bhoamikhona"
+          >Bhoami K Khona</a
+        >.
+      </div>
+    </footer>
   </body>
 </html>
