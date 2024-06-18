@@ -47,6 +47,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.3s ease;
 }
 
 html {
@@ -130,7 +131,6 @@ input[type="range"] {
   background: transparent;
   cursor: pointer;
   width: 7.1rem;
-  transition: all 0.3s ease;
 }
 
 /* Chrome, Safari, Opera and Edge Chromium styles */
@@ -150,7 +150,6 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 6rem;
   height: 1.6rem;
   width: 1.6rem;
-  transition: all 0.3s ease;
 }
 
 input[type="range"]::-webkit-slider-thumb:hover {
@@ -230,7 +229,6 @@ input[type="range"]::-moz-range-thumb {
   justify-content: center;
 
   box-shadow: inset 0px -4px 0px var(--light-key-shadow);
-  transition: all 0.3s ease;
 }
 
 .btn:hover {
@@ -291,7 +289,6 @@ input[type="range"]::-moz-range-thumb {
   text-decoration: none;
   border-bottom: 1px solid var(--white);
   display: inline-block;
-  transition: all 0.3s ease;
 }
 
 .attribution__link:hover,

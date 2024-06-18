@@ -24,6 +24,7 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
   </head>
   <body class="body" data-theme="1">
     <header class="header">
@@ -36,59 +37,34 @@
             <span>2</span>
             <span>3</span>
           </div>
-          <input
-            type="range"
-            min="1"
-            max="3"
-            value="1"
-            class="slider"
-            id="theme-slider"
-          />
+          <input type="range" min="1" max="3" value="1" class="slider" />
         </div>
       </div>
     </header>
     <main class="main">
       <div class="main__display">
-        <span class="display--value">399,981</span>
+        <p class="display">399,981</p>
       </div>
-      <div class="main__action">
-        <button class="btn" data-action="digit">7</button>
-        <button class="btn" data-action="digit">8</button>
-        <button class="btn" data-action="digit">9</button>
-        <button class="btn btn-blue delete-key" data-action="delete">
-          del
-        </button>
-        <button class="btn" data-action="digit">4</button>
-        <button class="btn" data-action="digit">5</button>
-        <button class="btn" data-action="digit">6</button>
-        <button class="btn" data-action="operator">+</button>
-        <button class="btn" data-action="digit">1</button>
-        <button class="btn" data-action="digit">2</button>
-        <button class="btn" data-action="digit">3</button>
-        <button class="btn" data-action="operator">-</button>
-        <button class="btn" data-action="decimal">.</button>
-        <button class="btn" data-action="digit">0</button>
-        <button class="btn" data-action="operator">/</button>
-        <button class="btn" data-action="operator">x</button>
-        <button class="btn btn-blue reset-key" data-action="reset">
-          reset
-        </button>
-        <button class="btn btn-red equal-key" data-action="equals">=</button>
+      <div class="main__action keypad">
+        <button value="7" class="btn">7</button>
+        <button value="8" class="btn">8</button>
+        <button value="9" class="btn">9</button>
+        <button value="d" class="btn btn-blue delete-key">del</button>
+        <button value="4" class="btn">4</button>
+        <button value="5" class="btn">5</button>
+        <button value="6" class="btn">6</button>
+        <button value="+" class="btn">+</button>
+        <button value="1" class="btn">1</button>
+        <button value="2" class="btn">2</button>
+        <button value="3" class="btn">3</button>
+        <button value="-" class="btn">-</button>
+        <button value="." class="btn">.</button>
+        <button value="0" class="btn">0</button>
+        <button value="/" class="btn">/</button>
+        <button value="*" class="btn">x</button>
+        <button value="r" class="btn btn-blue reset-key">reset</button>
+        <button value="=" class="btn btn-red equal-key">=</button>
       </div>
     </main>
-    <footer class="footer">
-      <div class="attribution">
-        Challenge by
-        <a
-          class="attribution__link"
-          href="https://www.frontendmentor.io?ref=challenge"
-          target="_blank"
-          >Frontend Mentor</a
-        >. Coded by
-        <a class="attribution__link" href="https://github.com/bhoamikhona"
-          >Bhoami K Khona</a
-        >.
-      </div>
-    </footer>
   </body>
 </html>
